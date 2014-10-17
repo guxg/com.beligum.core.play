@@ -18,6 +18,7 @@ object ApplicationBuild extends Build {
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
   	organization := "com.beligum",
+  	ebeanEnabled := true, 
   
     // Add your own project settings here    
     resolvers += Resolver.url("Objectify Play Repository", url("http://schaloner.github.com/releases/"))(Resolver.ivyStylePatterns),
